@@ -4,7 +4,7 @@
 
 ## 一、政策適用範圍
 
-本隱私權政策適用於 Chrome 擴充功能「Discord Music Bot Linker Auth」（以下稱「本擴充功能」）。
+本隱私權政策適用於 Chrome 擴充功能「Self-Hosted Music Linker」（以下稱「本擴充功能」）。
 
 本擴充功能的用途，是讓使用者將 YouTube、SoundCloud 或 Bilibili 的影音網址，傳送至使用者自行架設並授權的 Discord Music Bot。
 
