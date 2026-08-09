@@ -1,0 +1,108 @@
+<header>
+      <div class="mark" aria-hidden="true">♪</div>
+      <h1>Self-Hosted Music Linker 隱私權政策</h1>
+      <p class="updated">最後更新：2026 年 8 月 9 日</p>
+    </header>
+
+    <p class="intro">
+      本隱私權政策說明 Chrome 擴充功能「Self-Hosted Music Linker」（以下稱「本擴充功能」）如何處理使用者資料。本擴充功能的單一用途，是將使用者主動選擇的 YouTube、SoundCloud 或 Bilibili 影音網址，傳送至使用者自行指定並授權的自架音樂 Bot。
+    </p>
+
+    <section aria-labelledby="scope">
+      <h2 id="scope">1. 適用範圍與服務架構</h2>
+      <p>本擴充功能開發者不提供中央播放伺服器，也不代替使用者營運音樂 Bot。使用者必須自行指定要連線的 HTTPS Bot 主機。</p>
+      <p>本擴充功能所處理的授權資料及影音網址，只會保存在使用者的 Chrome 本機，或傳送至使用者主動指定的 Bot 主機；不會傳送至本擴充功能開發者控制的中央伺服器。</p>
+    </section>
+
+    <section aria-labelledby="data">
+      <h2 id="data">2. 處理的資料</h2>
+      <p>為提供授權與播放功能，本擴充功能可能處理：</p>
+      <ul>
+        <li><strong>Bot 連線資料：</strong>使用者貼上的 HTTPS 授權連結及 Bot 主機網址。</li>
+        <li><strong>驗證資料：</strong>一次性授權碼、限時裝置 Token、授權識別碼及到期時間。</li>
+        <li><strong>Discord 識別資料：</strong>由 Bot 回傳的 Discord 使用者 ID、伺服器 ID及裝置名稱。</li>
+        <li><strong>影音網址：</strong>使用者主動按下播放按鈕時的目前分頁網址，或使用者透過右鍵選單主動選取的頁面或超連結網址。</li>
+        <li><strong>連線中繼資料：</strong>使用者指定的 Bot 主機及其網路服務供應商可能因建立 HTTPS 連線而接收 IP 位址等必要連線資料。</li>
+      </ul>
+      <p>本擴充功能不會讀取完整瀏覽紀錄，不會持續監控分頁，也不會讀取網頁中的密碼、表單、私人訊息、付款資料或健康資料。</p>
+    </section>
+
+    <section aria-labelledby="use">
+      <h2 id="use">3. 資料使用目的</h2>
+      <p>上述資料只用於：</p>
+      <ul>
+        <li>向使用者指定的 Bot 兌換一次性授權。</li>
+        <li>在 Chrome 本機保存並驗證限時裝置授權。</li>
+        <li>顯示裝置名稱與授權到期時間。</li>
+        <li>確認目前或右鍵選取的網址是否屬於支援的影音平台。</li>
+        <li>在使用者主動要求時，將單一影音網址傳送至使用者指定的 Bot。</li>
+        <li>偵測授權到期、無效或已被撤銷，並清除失效的本機授權。</li>
+      </ul>
+      <p>資料不會用於廣告、跨網站追蹤、使用者側寫、信用評分，或任何與本擴充功能單一用途無關的目的。</p>
+    </section>
+
+    <section aria-labelledby="permissions">
+      <h2 id="permissions">4. Chrome 權限用途</h2>
+      <ul>
+        <li><strong>activeTab：</strong>只有使用者開啟擴充功能並主動要求播放時，才取得目前分頁網址。</li>
+        <li><strong>contextMenus：</strong>提供使用者主動操作的右鍵播放選單。</li>
+        <li><strong>storage：</strong>在 Chrome 本機保存 Bot 網址、限時授權、裝置資訊與到期時間。</li>
+        <li><strong>選用 HTTPS 主機權限：</strong>每位使用者的自架 Bot 網址不同；只有使用者貼上授權連結並明確同意後，才取得該指定 HTTPS 主機的連線權限。</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="storage">
+      <h2 id="storage">5. 資料保存與刪除</h2>
+      <p>Bot 網址、裝置 Token、授權識別資料、裝置名稱及到期時間會保存在 Chrome 的擴充功能本機儲存空間。</p>
+      <p>當授權到期、Bot 回覆未授權或授權遭撤銷時，本擴充功能會清除本機授權。使用者也可以移除本擴充功能，以刪除 Chrome 為本擴充功能保存的本機資料。</p>
+      <p>使用者指定的自架 Bot 如何保存或刪除伺服器端資料，由該 Bot 的管理者負責。使用者可透過 Bot 提供的裝置撤銷功能或聯絡該 Bot 管理者提出刪除要求。</p>
+    </section>
+
+    <section aria-labelledby="sharing">
+      <h2 id="sharing">6. 資料分享與第三方</h2>
+      <p>本擴充功能不出售、出租或提供使用者資料給廣告商、資料仲介商或其他行銷服務。</p>
+      <p>為完成使用者要求的功能，資料只會傳送至使用者自行指定的 Bot 主機。若該主機使用 Cloudflare Tunnel 或其他代管、網路中繼服務，相關服務供應商可能依其政策處理必要的連線與安全性資料。</p>
+      <p>影音網址送達 Bot 後，Bot 可能依使用者要求連線至 YouTube、SoundCloud 或 Bilibili。相關第三方服務的資料處理由各自的隱私權政策規範。</p>
+    </section>
+
+    <section aria-labelledby="security">
+      <h2 id="security">7. 資料安全</h2>
+      <p>本擴充功能只允許使用 HTTPS 與使用者指定的 Bot 主機交換資料。裝置 Token 透過 Authorization 標頭傳送，不會附加在播放網址中或公開顯示。</p>
+      <p>本擴充功能不下載或執行遠端 JavaScript 或 WebAssembly；所有可執行程式碼均包含在擴充功能套件中。</p>
+    </section>
+
+    <aside class="notice" aria-label="Chrome Web Store Limited Use 聲明">
+      <p>
+        <strong>Chrome Web Store Limited Use 聲明：</strong><br>
+        本擴充功能對使用者資料的使用，遵守 Chrome Web Store User Data Policy，包括 Limited Use requirements。資料只會用於提供或改善本擴充功能所清楚揭露的單一用途。
+        <span class="english" lang="en">The use of information received from Chrome APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.</span>
+      </p>
+    </aside>
+
+    <section aria-labelledby="rights">
+      <h2 id="rights">8. 使用者的選擇與權利</h2>
+      <p>使用者可以拒絕授予 Bot 主機權限、不兌換授權、不傳送影音網址、在 Bot 中撤銷裝置授權，或移除本擴充功能。</p>
+      <p>如需查詢、更正或刪除自架 Bot 保存的資料，請聯絡該 Bot 管理者。本擴充功能開發者無法存取或刪除使用者自行指定主機上的資料。</p>
+    </section>
+
+    <section aria-labelledby="children">
+      <h2 id="children">9. 兒童隱私</h2>
+      <p>本擴充功能不以兒童為主要對象，也不會刻意蒐集兒童個人資料。使用者仍須遵守 Discord 及相關影音平台的年齡限制與服務條款。</p>
+    </section>
+
+    <section aria-labelledby="changes">
+      <h2 id="changes">10. 政策變更</h2>
+      <p>如果本擴充功能的資料處理方式發生變更，本頁會更新政策內容及最後更新日期。若涉及新的資料類別或用途，將依適用規定提供必要的揭露與同意流程。</p>
+    </section>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">11. 聯絡方式</h2>
+      <p>如對本政策或本擴充功能的資料處理方式有疑問，請使用 Chrome 線上應用程式商店商品頁所列的開發人員聯絡資訊與支援管道。</p>
+    </section>
+
+    <footer>
+      本頁是 Self-Hosted Music Linker 的專用隱私權政策頁面，不是一般產品首頁。
+    </footer>
+  </main>
+</body>
+</html>
