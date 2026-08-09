@@ -1,4 +1,4 @@
-# Discord Music Bot Linker Auth 隱私權政策
+# Self-Hosted Music Linker 隱私權政策
 
 最後更新日期：2026 年 8 月 8 日
 
